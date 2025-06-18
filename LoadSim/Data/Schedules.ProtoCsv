@@ -1,0 +1,16 @@
+:First_Shift_AEV.csv
+07:30, 18:00  
+18:30, 19:30 # (grocery store)  
+:Second_Shift_AEV.csv
+13:30, 23:00  
+23:30, 00:30 #(store)  
+:Third_Shift_AEV.csv
+20:30, 22:30 #(grocery run)  
+22:30, 08:00  
+:Retired_AEV.csv
+09:30, 11:00 #(groceries)  
+11:00, 13:00 #(breakfast out)  
+17:00, 19:00 #(dinner outing)  
+:Home_AEV.csv
+16:30, 18:00 #(errand)  
+

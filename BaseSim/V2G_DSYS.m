@@ -1,4 +1,4 @@
-function mpc = case33bw
+function mpc = V2G_DSYS
 %CASE33BW  Power flow data for 33 bus distribution system from Baran & Wu
 %   Please see CASEFORMAT for details on the case file format.
 %
@@ -17,6 +17,7 @@ mpc.version = '2';
 mpc.baseMVA = 10;
 
 %% bus data
+%	1		2		3	4	5	6	7		8	9	10		11		12		13
 %	bus_i	type	Pd	Qd	Gs	Bs	area	Vm	Va	baseKV	zone	Vmax	Vmin
 mpc.bus = [ %% (Pd and Qd are specified in kW & kVAr here, converted to MW & MVAr below)
 	1	3	0	0	0	0	1	1	0	12.66	1	1	1;
