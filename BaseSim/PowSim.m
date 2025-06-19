@@ -37,7 +37,13 @@ classdef PowSim < handle
     function b=getBus(obj, i)
       b=obj.Busses{i};
     endfunction
-
+    function update(obj,i)
+      %can add sys wide updates if needed.
+      for a=obj.Busses
+        a=a{1};
+        a.Update(i);
+      endfor
+    endfunction
     function Run(obj,i)
       %make sure the load changes apply
       for bi = 1:length(obj.Busses)

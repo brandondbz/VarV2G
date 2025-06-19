@@ -3,8 +3,11 @@ classdef LoadCF < Load
   LoadCrv
   endproperties
   methods
-  function obj=LoadCF(LC)
+  function obj=LoadCF(LC,BS)
     obj.LoadCrv=LC;
+    X=1*deltaT;
+    s=obj.LoadCrv.Interpolate(X);
+    obj.Pd=obj.LBus=BS;
   endfunction
   function UpdateF(obj, i)
     global deltaT

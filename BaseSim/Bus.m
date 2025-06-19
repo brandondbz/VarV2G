@@ -7,8 +7,8 @@ classdef Bus < handle
     id;
     PSi;
     Loads={};
-    QB=nan;
-    PB=nan;
+    QB;
+    PB;
   endproperties
 
   methods
@@ -33,7 +33,7 @@ classdef Bus < handle
          obj.QB=eref.bus_Qd(PS.cse,i);
          obj.PB=eref.bus_Pd(PS.cse,i);
        endfunction
-      function Update(obj)
+      function Update(obj,i)
         if length(obj.Loads)==0
           return;
         endif
@@ -41,6 +41,7 @@ classdef Bus < handle
         Qd=0;
         for a = obj.Loads
           a=a{1};
+          a.Update(i)
           Pd+=a.Pd;
           Qd+=a.Qd;
         endfor

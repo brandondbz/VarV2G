@@ -15,7 +15,8 @@ if ~exist('VAR_VTG_INIT','var')
   logi+=1;
   LOUT= _combinePath(LogPath, strcat("Log_", num2str(logi), ".txt"));
   dlmwrite(_combinePath(LogPath, "CT.txt"),logi)
-  directorysToAdd = {_combinePath( cd, '\BaseSim'),  _combinePath( cd,'\SysUnderTest'), _combinePath( cd,'\LoadSim')};
+  directorysToAdd = {_combinePath( cd, '\BaseSim'),  _combinePath( cd,'\SysUnderTest'),
+  _combinePath( cd,'\LoadSim'),_combinePath( cd,'\LoadSim\Compat')};
   diary(LOUT);
   diary on;
   printf("Log initialized: %s\r\n", LOUT);
