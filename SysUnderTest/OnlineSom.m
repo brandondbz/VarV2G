@@ -1,4 +1,4 @@
-classdef OnlineSOM<handle
+classdef OnlineSom<handle
     properties
         prototypes  % Cluster prototypes (each row is a class center)
         learningRate % Adaptive learning rate
@@ -6,21 +6,15 @@ classdef OnlineSOM<handle
     end
 
     methods
-        function obj = OnlineSOM(k, learningRate, threshold,minVector, maxVector, mergeThreshold, callbackFunc)
+        function obj = OnlineSom(k, learningRate, threshold,minVector, maxVector)
           if length(minVector)~=length(maxVector)
             error("min and max vectors must be same size!");
           endif
           inputDim=length(minVector);
-          obj.prototypes=initializeClusters(k, minVector,maxVector);
+          obj.prototypes=obj.initializeClusters(k, minVector,maxVector);
             %obj.prototypes = []; %rand(1, inputDim); % Initialize with one random class (0 may be better)
             obj.learningRate = learningRate;
             obj.threshold = threshold;
-            if exist('mergeThreshold','var') && exist('callbackFunc','var')
-              obj.mergeThreshold = mergeThreshold;
-              obj.callbackFunc = callbackFunc;
-            else
-              obj.mergeThreshold=0;
-            endif
         end
         function clusters = initializeClusters(obj, K, minVector, maxVector)
             numDims = length(minVector);
@@ -29,6 +23,7 @@ classdef OnlineSOM<handle
                 clusters(:, d) = linspace(minVector(d), maxVector(d), K)';
             end
         end
+
         function classID = classify(obj, stateVector)
             % Compute distances to all existing prototypes
             distances = sqrt(sum((obj.prototypes - stateVector).^2, 2));

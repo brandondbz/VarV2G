@@ -1,5 +1,0 @@
-Log initialized: D:\SimulationTools\Projects\VAR_V2G\VARV2G\\Log\Log_9.txt
-Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\BaseSim
-Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\SysUnderTest
-Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim
-Initilized

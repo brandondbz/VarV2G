@@ -15,12 +15,6 @@ classdef ActionTable < handle
             obj.actionPrototypes = obj.initializeActionVectors(K, minVector, maxVector);
             obj.MIN=minVector;
             obj.MAX=maxVector;
-            if exist('mergeThreshold','var') && exist('callbackFunc','var')
-              obj.mergeThreshold = mergeThreshold;
-              obj.callbackFunc = callbackFunc;
-            else
-              obj.mergeThreshold=0;
-            endif
         endfunction
 
         function actionVectors = initializeActionVectors(obj, K, minVector, maxVector)
@@ -30,8 +24,18 @@ classdef ActionTable < handle
             for d = 1:numDims
                 actionVectors(:, d) = linspace(minVector(d), maxVector(d), K)';
             endfor
+            actionVectors(K+1,:)=zeros(1, numDims);
         endfunction
-
+       function A=ValidActions(minQ,maxQ)
+         A=zeros(1,size(obj.actionPrototypes,1));
+         for i=1:length(A)
+           if sum(minQ>obj.actionPrototypes(i))>0 || sum(maxQ<obj.actionPrototypes)>0
+             A(i)=0; %if any outside of range then don't pick it.
+           else
+             A(i)=1; %otherwise ok
+           endif
+         endfor
+       endfunction
        function expandActionSpace(obj,  minVector_new, maxVector_new)
             minVector_new=min(minVector_new, obj.MIN);
             maxVector_new=max(maxVector_new, obj.MAX);

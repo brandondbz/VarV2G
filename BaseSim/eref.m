@@ -74,6 +74,7 @@ classdef eref
         #set/get pattern.
         if exist('Pd','var')
           mpc.bus(row,3)=Pd;
+          Pd=mpc;
           else
           Pd=mpc.bus(row,3);
         endif
@@ -82,6 +83,7 @@ classdef eref
         #set/get pattern.
         if exist('Qd','var')
           mpc.bus(row,4)=Qd;
+          Qd=mpc;
           else
           Qd=mpc.bus(row,4);
         endif
@@ -90,6 +92,7 @@ classdef eref
         #set/get pattern.
         if exist('Gs','var')
           mpc.bus(row,5)=Gs;
+          Gs=mpc;
           else
           Gs=mpc.bus(row,5);
         endif
@@ -98,6 +101,7 @@ classdef eref
         #set/get pattern.
         if exist('Bs','var')
           mpc.bus(row,6)=Bs;
+          Bs=mpc;
           else
           Bs=mpc.bus(row,6);
         endif
@@ -107,6 +111,7 @@ classdef eref
         #set/get pattern.
         if exist('Vm','var')
           mpc.bus(row,i)=Vm;
+          Vm=mpc;
           else
           Vm=mpc.bus(row,i);
         endif
@@ -116,6 +121,7 @@ classdef eref
         #set/get pattern.
         if exist('Va','var')
           mpc.bus(row,i)=Va;
+          Va=mpc;
           else
           Va=mpc.bus(row,i);
         endif
@@ -125,6 +131,7 @@ classdef eref
         #set/get pattern.
         if exist('KV','var')
           mpc.bus(row,i)=KV;
+          KV=mpc;
           else
           KV=mpc.bus(row,i);
         endif
@@ -134,6 +141,7 @@ classdef eref
         #set/get pattern.
         if exist('Vmax','var')
           mpc.bus(row,i)=Vmax;
+          Vmax=mpc;
           else
           Vmax=mpc.bus(row,i);
         endif
@@ -143,6 +151,7 @@ classdef eref
         #set/get pattern.
         if exist('Vmin','var')
           mpc.bus(row,i)=Vmin;
+          Vmin=mpc;
           else
           Vmin=mpc.bus(row,i);
         endif

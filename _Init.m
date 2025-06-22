@@ -15,8 +15,8 @@ if ~exist('VAR_VTG_INIT','var')
   logi+=1;
   LOUT= _combinePath(LogPath, strcat("Log_", num2str(logi), ".txt"));
   dlmwrite(_combinePath(LogPath, "CT.txt"),logi)
-  directorysToAdd = {_combinePath( cd, '\BaseSim'),  _combinePath( cd,'\SysUnderTest'),
-  _combinePath( cd,'\LoadSim'),_combinePath( cd,'\LoadSim\Compat')};
+  directorysToAdd = {_combinePath( cd, '\BaseSim'),  _combinePath( cd,'\SysUnderTest'), ...
+  _combinePath( cd,'\LoadSim'),_combinePath( cd,'\Compat')};
   diary(LOUT);
   diary on;
   printf("Log initialized: %s\r\n", LOUT);
@@ -39,11 +39,12 @@ if ~exist('VAR_VTG_INIT','var')
   disp("Initilized");
   VAR_VTG_INIT=1;
 
-
   %Global parameters
   %deltaT, the time unit (in hours).
-  global deltaT
-  deltaT=1;
-  diary off
+  Config.Inst().pset("deltaT",1);
+  %set default the distribution version.
+  Config.Inst().pset('PowSrc', _combinePath(cd, "\\BaseSim\\V2G_DSYS.m"));
+else
+  diary on;
 endif
 

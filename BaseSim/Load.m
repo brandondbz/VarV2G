@@ -6,6 +6,7 @@ classdef Load < handle
         Qd=0;
         %gets initialized externally
         LBus;
+        name="generic";
     endproperties
     methods
        function TakeBase(obj)

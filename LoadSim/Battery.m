@@ -3,6 +3,7 @@ classdef Battery < handle
     Capacity;
     SOC;
     ChargeP;
+    SMax;
     DriveDC;
   endproperties
   methods
@@ -11,16 +12,17 @@ classdef Battery < handle
       obj.SOC=SOC;
       obj.ChargeP=ChargeP;
       obj.DriveDC=DriveDC;
+      obj.SMax=Config.Inst().pget('BattSMaxRel', 1.1)*ChargeP;
     endfunction
     function obj2=Copy(obj)
       obj2=Battery(obj.Capacity, obj.SOC, obj.ChargeP, obj.DriveDC);
     endfunction
     function Discharge(obj)
-       global deltaT
+        deltaT=Config.Inst().pget("deltaT");
        obj.SOC=max(obj.SOC-(obj.DriveDC/deltaT),0);
     endfunction
     function P=Charge(obj)
-      global deltaT
+      deltaT=Config.Inst().pget("deltaT");
       if obj.SOC<obj.Capacity
         obj.SOC += obj.ChargeP*deltaT;
         P=obj.ChargeP

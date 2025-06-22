@@ -1,16 +1,25 @@
 classdef LoadCF < Load
   properties
-  LoadCrv
+    LoadCrv
+    LCName
+    name="duck";
+    %LBus;
+    %Pd;
+    %Qd;
   endproperties
   methods
   function obj=LoadCF(LC,BS)
-    obj.LoadCrv=LC;
+    deltaT=Config.Inst().pget("deltaT");
+    obj.LoadCrv=LC.data;
+    obj.LCName=LC.name;
     X=1*deltaT;
     s=obj.LoadCrv.Interpolate(X);
-    obj.Pd=obj.LBus=BS;
+    obj.LBus=BS;
+    obj.Pd=BS.PB*s;
+    obj.Qd=BS.QB*s;
   endfunction
   function UpdateF(obj, i)
-    global deltaT
+     deltaT=Config.Inst().pget("deltaT");
     X=i*deltaT;
     s=obj.LoadCrv.Interpolate(X);
     obj.Pd=obj.LBus.PB*s;

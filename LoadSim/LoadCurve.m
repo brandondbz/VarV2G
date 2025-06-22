@@ -6,38 +6,40 @@ classdef LoadCurve < handle
   methods
     %normalize to a value.
     function NormalizeYTo(obj,V100)
-      obj.Y=obj.Y/V100;
+      nF=V100/max(obj.Y)
+      obj.Y=obj.Y.*nF;
     endfunction
-    function Y=Interpolate(obj,X)
+    function ysc=Interpolate(obj,X)
       k=find(obj.X>X);
       if length(k)==0
-        Y=obj.Y(end);%apply window by assuming consted before X{0) and after(X(end))
+        ysc=obj.Y(end);%apply window by assuming consted before X{0) and after(X(end))
         return;
       endif
       k=k(1);
       if k==1
-        Y=obj.Y(1);
+        ysc=obj.Y(1);
         return;
       endif
-      y=Y(k);
-      yy=Y(k-1);
-      x=X(k);
-      xx=X(k-1);
+      y=obj.Y(k);
+      yy=obj.Y(k-1);
+      x=obj.X(k);
+      xx=obj.X(k-1);
       xsc=(X-xx)/(x-xx);
       ysc=(y-yy)*xsc+yy; %interpolate
+    endfunction
+    function obj=LoadCurve(X,Y)
+        obj.Y=Y;
+        obj.X=X;
+        obj.NormalizeYTo(1);%we multiply by Q,P
     endfunction
   endmethods
   methods(Static)
     function LC=Load(fn)
       M=dlmread(fn);
-      LC=LoadCurve();
-      LC.X=M(:,1);
-      LC.Y=M(:,2);
+      LC=LoadCurve(M(:,1),M(:,2));
     endfunction
     function LC=Create(X,Y)
-      LC=LoadCurve();
-      LC.X=X;
-      LC.Y=Y;
+      LC=LoadCurve(X,Y);
     endfunction
     function LC=LoadWebPlotDigitizerProject(fn)
       LC={};

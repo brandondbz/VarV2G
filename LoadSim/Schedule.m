@@ -14,7 +14,7 @@ classdef Schedule
       endif
     endfor
     obj.name=name;
-    global deltaT;
+     deltaT=Config.Inst().pget("deltaT");
     i=(1:ceil(24/deltaT))';
     t=(i*deltaT)';
     obj.AEV=ones(size(i));

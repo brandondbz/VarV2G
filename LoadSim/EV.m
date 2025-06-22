@@ -8,12 +8,16 @@ classdef EV < Load
     CType;
     AEV=[];
     Controller=[];
+    name="EV";
   endproperties
   methods
     function obj=EV(Batt, CType, AEV)
       obj.Batt=Batt;
       obj.CType=CType;
       obj.AEV=AEV;
+    endfunction
+    function Q=MaxQ(obj,i)
+      Q=sqrt(Batt.SMax^2-obj.Pd^2);
     endfunction
     function UpdateQ(obj,i)
       %so we can chain in the branch cases
