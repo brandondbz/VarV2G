@@ -3,48 +3,79 @@
 %cfg.pget("var",default)/cfg.pset("var",value)
 classdef Config < handle
   methods(Static)
-    function obj=Inst()
-      persistent config = nan;
-      if ~isobject(config)
-        config=Config();
-      endif
-      obj=config;
-    endfunction
-    function filewrite(filename, content)
-      fid = fopen(filename, 'w');
-      if fid == -1
-        error('Unable to open file.');
-      endif
-      fprintf(fid, '%s', content);
-      fclose(fid);
-    endfunction
-  endmethods
-  properties
-    CFG=struct();
-  endproperties
-  methods
-    function Load(obj,fname)
-      obj.CFG=jsondecode(fileread(fname));
-    endfunction
-    function Save(obj,fname)
-      json=jsonencode(obj.CFG, "PrettyPrint", true);
-      Config.filewrite(fname,json);
-    endfunction
-    function O=pget(obj,prop,O)
-      if isfield(obj.CFG,prop)
-        O=getfield(obj.CFG,prop);
+  function obj=Inst()
+    persistent config = nan;
+    if ~isobject(config)
+      config=Config();
+    endif
+    obj=config;
+  endfunction
+  function filewrite(filename, content)
+    fid = fopen(filename, 'w');
+    if fid == -1
+      error('Unable to open file.');
+    endif
+    fprintf(fid, '%s', content);
+    fclose(fid);
+  endfunction
+endmethods
+properties
+  CFG=struct();
+endproperties
+methods
+
+
+  function print_struct_fields(obj,s, indent)
+    if nargin < 3
+      indent = '';  % Default: no indent
+    end
+    if nargin<2
+      s=obj.CFG; %Default, take root.
+    endif
+    if ~isstruct(s)
+      error('Input must be a struct.');
+    end
+
+    fields = fieldnames(s);
+    for i = 1:numel(fields)
+      fname = fields{i};
+      value = s.(fname);
+      if isstruct(value)
+        printf('%s%s: [struct]\n', indent, fname);
+        for j = 1:numel(value)
+          printf('%s  [%d]:\n', indent, j);
+          obj.print_struct_fields(value(j), [indent '    ']);
+        end
       else
-        obj.pset(prop,O); %make sure default is set.
-        %doing this will make it easier to edit the settings later.
-      endif
-      %since we just have same var as our 'default' and output_precision
-      %unmodified means default, modified means it got something
-    endfunction
-    function B=pexist(obj, prop)
-      B=isfield(obj.CFG,prop);
-    endfunction
-    function pset(obj,prop,O)
-      obj.CFG=setfield(obj.CFG, prop, O);
-    endfunction
-  endmethods
+        printf('%s%s: ', indent, fname);
+        disp(value);
+      end
+    end
+  end
+
+
+  function Load(obj,fname)
+    obj.CFG=jsondecode(fileread(fname));
+  endfunction
+  function Save(obj,fname)
+    json=jsonencode(obj.CFG, "PrettyPrint", true);
+    Config.filewrite(fname,json);
+  endfunction
+  function O=pget(obj,prop,O)
+    if isfield(obj.CFG,prop)
+      O=getfield(obj.CFG,prop);
+    else
+      obj.pset(prop,O); %make sure default is set.
+      %doing this will make it easier to edit the settings later.
+    endif
+    %since we just have same var as our 'default' and output_precision
+    %unmodified means default, modified means it got something
+  endfunction
+  function B=pexist(obj, prop)
+    B=isfield(obj.CFG,prop);
+  endfunction
+  function pset(obj,prop,O)
+    obj.CFG=setfield(obj.CFG, prop, O);
+  endfunction
+endmethods
 endclassdef

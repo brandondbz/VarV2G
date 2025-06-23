@@ -1,4 +1,4 @@
-classdef QLearning
+classdef QLearning<handle
     properties
         QTable  % State-action value table
         alpha   % Learning rate
@@ -13,7 +13,7 @@ classdef QLearning
 
     methods
 
-        function obj = QLearning( minV, minSI, maxV, maxSI, minQ,  maxQ)
+        function obj = QLearning( minV, minP, maxV,maxP, minQ,  maxQ)
             dcfg=struct('alpha', 0.1, 'gamma',0.1,'epsilon',0.01,'som_learningRate',0.1,'som_threshold',0.1,'numStates',100,'numActions',100);
 
             cfg=Config.Inst();
@@ -25,63 +25,87 @@ classdef QLearning
             threshold=dcfg.som_threshold;
             numStates=dcfg.numStates;
             numActions=dcfg.numActions;
+
             %pack state
-            minState=[minV, minSI];
-            maxState=[maxV, maxSI];
+            minState=[minV, minP,minQ];
+            maxState=[maxV,maxP, maxQ];
 
             obj.minQ=minQ;
             obj.maxQ=maxQ;
 
+            if any(isinf(minQ)) || any(isinf(maxQ))
+              error("INF in Q");
+            endif
+
+            obj.actionTable=ActionTable(numActions, minQ, maxQ);
+            printf("QTable Target ActNum: %d, actual: %d\n\n", numActions, obj.actionTable.k);
+            numActions=obj.actionTable.k; %action table keeps integer even over all dims, which means there can be some rounding error resulting in k slightly higher.
+
+            obj.stateMap=OnlineSom(numStates, learningRate,  minState, maxState);
+            printf("Num States=%d,Acts=%d\n",numStates, numActions);
             obj.QTable = zeros(numStates, numActions);
             obj.actions = 1:numActions;
-            obj.actionTable=ActionTable(numActions, minQ, maxQ);
-            obj.stateMap=OnlineSom(numStates, learningRate, threshold, minState, maxState);
         end
 
-        function Q=Act(obj, V, SI,  minQ, maxQ) % rename as needed, but have the inputs come in here.
+        function [st,ac, QA]=Act(obj, V, P, Q,  minQ, maxQ) % rename as needed, but have the inputs come in here.
           obj.minQ=minQ;
           obj.maxQ=maxQ;
           %require row vectors
           if size(V,1)>size(V,2)
             V=V';
           endif
-          if size(SI,1)>size(SI,2)
-            V=V';
+          if size(P,1)>size(P,2)
+            Q=Q';
           endif
           %pack state
-          state=[V, SI];
+          state=[V, P,Q];
           st=obj.stateMap.classify(state)
           ac=obj.selectAction(st);
-
+          QA=obj.actionTable.GetElement(ac);
+          if any(isinf(QA))
+            state
+            obj.actionTable.actions
+            error("Invalid action");
+          endif
         endfunction
+
+
         function a=lrandi(obj)
           VS=obj.actionTable.ValidActions(obj.minQ,obj.maxQ);
-          QTemp=obj.QTable(ac,:); %pick row based on current state
-          QTemp(~VS)=-inf; %set all invalid actions
-          a=randi(length(QTemp));
+          a=randi(length(VS));
           while VS(a)==0
-            a=randi(length(QTemp));
+            a=randi(length(VS));
           endwhile
-        endfunction
+          %Since random a is preselected above. Also, 'ValidActions' is already in use
+          %QTemp=obj.QTable(a,:); %pick row based on current state
+         endfunction
+
+
         function a=lmax(obj,ac)
           VS=obj.actionTable.ValidActions(obj.minQ,obj.maxQ);
           QTemp=obj.QTable(ac,:); %pick row based on current state
           QTemp(~VS)=-inf; %set all invalid actions
           [~,a]=max(QTemp);
         endfunction
+
+
         function action = selectAction(obj, state)
             if rand < obj.epsilon
                 %for exploration, we will apply our filter next.
-                action = obj.lrandi(length(obj.actions)); % Explore
+                action = obj.lrandi(); % Explore
             else
-
                 action=obj.lmax(state) % Exploit
             end
         end
 
-        function obj = updateQTable(obj, state, action, reward, nextState)
+        function obj = updateQTable(obj, state, action, reward, V,P,Q)
+          nextStateS=[V, P,Q];
+          nextState=obj.stateMap.classify(state);
             maxNextQ = max(obj.QTable(nextState, :));
-            obj.QTable(state, action) = obj.QTable(state, action) + obj.alpha * (reward + obj.gamma * maxNextQ - obj.QTable(state, action));
+            sa=[state,action]
+            Reward= obj.QTable(state, action) + obj.alpha * (reward + obj.gamma * maxNextQ - obj.QTable(state, action))
+            obj.QTable(state, action) =Reward
+            Record.Inst().pset("QTable",obj.QTable);
         end
     end
 end

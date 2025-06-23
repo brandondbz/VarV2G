@@ -25,24 +25,36 @@ classdef Bus < handle
     endfunction
 
     function ret=GetLoads(obj,name)
-      ret=[]; rct=0;
+      ret={}; rct=0;
       for i=1:length(obj.Loads)
-        if obj.Loads(i).name==name
+        if strcmp(obj.Loads{i}.name,name)
           rct+=1;
-          ret(rct)=obj.Loads(i);
+          ret{rct}=obj.Loads{i};
         endif
       endfor
     endfunction
 
-    function QL=EV_QLim(obj)
+    function QL=EV_QLim(obj,k)
+
       QL=[inf,-inf];
+      NL=0;
       for i=1:length(obj.Loads)
-        if obj.Loads(i).name==name
-          ev=obj.Loads(i);
-          QL(1)=min(QL(1), ev.MaxQ());
-          QL(2)=max(QL(2), ev.MaxQ());
+        if strcmp(obj.Loads{i}.name,"EV")
+          ev=obj.Loads{i};
+          QL(1)=ev.MinQ(k);
+          QL(2)= ev.MaxQ(k);
+          NL+=1;
+          break;
         endif
       endfor
+      if any(isinf(QL))
+        NL
+        if(NL==0)
+            QL=[0,0];
+            return
+        endif
+        error("INF IN Q");
+      endif
     endfunction
 
     function BaseLoad(obj)
@@ -58,9 +70,13 @@ classdef Bus < handle
       obj.QB=eref.bus_Qd(PS.cse,i);
       obj.PB=eref.bus_Pd(PS.cse,i);
       %TODO: Have all params read from a global CFG class, so we can adjust easily
-      obj.thev=Thev(3)
+      obj.thev=Thev(Config.Inst().pget("ThevCT",3));
     endfunction
-
+    function Ve=GetVe(obj)
+      V=obj.bus_Vm;
+      Vr=Config.Inst().pget("VNom",1);
+      Ve=(Vr-V);
+    endfunction
     function SI=GetSI(obj)
       %\begin{equation}SI_{th} = \frac{1}{\left| Z_{L} \right| - \left| Z_{th} \right|}\end{equation}
       Vth=obj.thev.Vth;
@@ -68,12 +84,17 @@ classdef Bus < handle
       IL=(obj.bus_Pd()/obj.bus_Vm())+j*(obj.bus_Qd()/obj.bus_Vm());
       Zl=(obj.bus_Vm)/IL; %V/I=Z
       if isnan(Zth)
-        SI=nan;
+        SI=[];
         return;
       endif
-      SI=1/(abs(Zth)-abs(Zl));
+      SI=1/(abs(Zl)-abs(Zth));
     endfunction
-
+    function JI=GetJI(obj)
+      alpha=Config.Inst().pget("JAlpha",1)
+      beta=Config.Inst().pget("JBeta",1);
+      %by returning inverse we can switch between sum before or after invert.
+      JI=alpha*obj.GetSI()+beta*abs(obj.GetVe)
+    endfunction
     function Update(obj,i)
       %update Thevenin first
       %for that, we need the load current
@@ -88,7 +109,9 @@ classdef Bus < handle
       Qd=0;
       for a = obj.Loads
         a=a{1};
-        a.Update(i)
+        a.Update(i);
+        a.name
+        [a.Pd, a.Qd]
         Pd+=a.Pd;
         Qd+=a.Qd;
       endfor
@@ -107,7 +130,9 @@ classdef Bus < handle
         Pd=eref.bus_Pd(obj.PSi.cse, obj.id);
       endif
     endfunction
-
+    function Sbase = BaseVA(obj)
+      Sbase = obj.PSi.cse.baseMVA * 1e6;              %% in VA
+    endfunction
     function PDW=bus_Pd_W(obj, PDW)
       Sbase = obj.PSi.cse.baseMVA * 1e6;              %% in VA
       if exist('PDW','var')

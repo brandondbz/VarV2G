@@ -1,0 +1,81 @@
+classdef EV < Load
+
+properties
+    TypeDC=1;
+  TypeAC=0;
+  Batt;
+  CType;
+  AEV=[];
+  Controller=[];
+  name="EV";
+endproperties
+methods
+  function obj=EV(Batt, CType, AEV)
+    obj.Batt=Batt;
+    obj.CType=CType;
+    obj.AEV=AEV;
+  endfunction
+  function Q=MinQ(obj,i)
+    Q=-sqrt(obj.Batt.SMax^2-obj.Pd^2)
+          if any(isinf(Q))
+        obj.Batt.SMax
+        obj.Pd
+        error("INF IN Q");
+      endif
+  endfunction
+  function Q=MaxQ(obj,i)
+    Q=sqrt(obj.Batt.SMax^2-obj.Pd^2)
+          if any(isinf(Q))
+        obj.Batt.SMax
+        obj.Pd
+        error("INF IN Q");
+      endif
+  endfunction
+
+  function UpdateF(obj,i)
+    %created so that anytime 'update' is called on object, it will call 'UpdateF' if available
+    %to alow for mix of static and reactive loads
+    AEV=obj.AEV;
+    if i > length(obj.AEV)
+      obj.Pd=0;
+      obj.Qd=0;
+      return;
+    endif
+    if AEV(i)==0
+      obj.Pd=0;
+      %if the cars away, it was driven.
+      %a future work could be to simulate the cars activity better.
+      obj.Batt.Discharge();
+      if obj.CType==obj.TypeAC
+        obj.Qd=0;
+        return;
+      elseif obj.CType==obj.TypeDC
+        return;
+      endif
+    else
+      obj.Pd=obj.Batt.Charge();
+    endif
+  endfunction
+  function curve=Emit(obj,ii,dt)
+    DT=Config.Inst().pget("deltaT");
+    Config.Inst().pset("deltaT",dt);
+    try
+      o=zeros(size(ii));
+      %extract charging curve
+    for i=(ii(:)')
+      obj.UpdateF(i);
+      o=obj.Pd;
+    endfor
+
+  catch err
+    % Error handling
+    fprintf('Caught an error: %s\n', err.message);
+  end_try_catch
+  %restore
+  Config.Inst().pset("deltaT",DT);
+ endfunction
+
+endmethods
+
+endclassdef
+

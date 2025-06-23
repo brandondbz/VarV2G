@@ -43,7 +43,7 @@ if ~exist('VAR_VTG_INIT','var')
   %deltaT, the time unit (in hours).
   Config.Inst().pset("deltaT",1);
   %set default the distribution version.
-  Config.Inst().pset('PowSrc', _combinePath(cd, "\\BaseSim\\V2G_DSYS.m"));
+  Config.Inst().pset('PowSrc', _combinePath(cd, "BaseSim\\V2G_AI_Radial.m"));
 else
   diary on;
 endif

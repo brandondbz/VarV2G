@@ -19,12 +19,15 @@ classdef Thev < handle
       obj.ct=ct;
     endfunction
     function [Vth, Zth]=Approx(obj,V,I)
-      return;
+      ThevThresh=Config.Inst().pget("ThevTheshold",1e-4);
       if obj.bs<obj.ct
+        if isempty(obj.I) || all(abs(obj.I-I)>=ThevThresh)
         obj.bs+=1;
         obj.V(obj.bs)=V;
         obj.I(obj.bs)=I;
-      else
+      endif
+    else
+       if isempty(obj.I) || all(abs(obj.I-I)>=ThevThresh)
         obj.V=circshift(obj.V, 1);
         obj.V(1)=V;
         obj.I=circshift(obj.I, 1);
@@ -32,8 +35,11 @@ classdef Thev < handle
         H=[ones(size(obj.I')) -(obj.I')];
         y=obj.V';
         x=(H'*H)\H'*y;
+        if real(x(2))>0
         obj.Vth=x(1);
         obj.Zth=x(2);
+        endif
+        endif
       endif
       Vth=obj.Vth;
       Zth=obj.Zth;

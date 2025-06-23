@@ -1,0 +1,1429 @@
+Log initialized: D:\SimulationTools\Projects\VAR_V2G\VARV2G\\Log\Log_93.txt
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\BaseSim
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\SysUnderTest
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\Compat
+Initilized
+Loaded
+deltaT:     0.2500
+PowSrc: D:\SimulationTools\Projects\VAR_V2G\VARV2G\BaseSim\V2G_AI_Radial.m
+runs:     4
+minP:               0
+       0.050000
+       0.045000
+       0.060000
+       0.030000
+maxP:             0
+       0.1500
+       0.1350
+       0.1800
+       0.0900
+minV:        0.9500
+       0.9500
+       0.9500
+       0.9500
+       0.9500
+maxV:        1.0500
+       1.0500
+       1.0500
+       1.0500
+       1.0500
+QSettings: [struct]
+  [1]:
+    alpha:     0.2000
+    gamma:     0.010000
+    epsilon:     0.1000
+    som_learningRate:     0.2000
+    som_threshold:     0.1000
+    numStates:     100
+    numActions:     3000
+LoadEnum: [struct]
+  [1]:
+    p_EV_Batt_Sigma:     10000
+    p_EV_Batt_mean:     100000
+    p_EV_DRate_mean:     15.570
+    p_EV_DRate_sigma:     1.7300
+    p_Seed:     7.3979e+05
+    p_chargeChain:        0.9500
+       0.2500
+            0
+    p_chargeChance:        1.0000
+       0.0500
+            0
+    p_chargeIfr:        0
+       0
+       1
+    p_chargeMax:     4000
+    p_chargeMin:     2000
+ThevCT:     10
+ThevTheshold:     1.0000e-03
+JAlpha:     0
+JBeta:     1
+VNom:     1
+    BaseFile =
+
+@(f) f (1:([find(f == '.') - 1, length(f)] (1)))
+
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\.
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\..
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\California_duck.json
+    Pat = _duck.json
+    nF = 0.027457
+    nF = 0.021201
+    nF = 0.030624
+    nF = 0.029292
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Central_duck.json
+    Pat = _duck.json
+    nF = 9.0468e-03
+    nF = 9.6529e-03
+    nF = 6.4554e-03
+    nF = 8.0770e-03
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\First_Shift_AEV.csv
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Home_AEV.csv
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Mid_Atlantic_duck.json
+    Pat = _duck.json
+    nF = 0.011282
+    nF = 7.9174e-03
+    nF = 0.011758
+    nF = 9.2293e-03
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\NorthWest_duck.json
+    Pat = _duck.json
+    nF = 0.026174
+    nF = 0.025408
+    nF = 0.021283
+    nF = 0.020169
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Northeast_duck.json
+    Pat = _duck.json
+    nF = 0.030172
+    nF = 0.022314
+    nF = 0.031938
+    nF = 0.025941
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Readme.txt
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Retired_AEV.csv
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Schedules.ProtoCsv
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Second_Shift_AEV.csv
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Southeast_duck.json
+    Pat = _duck.json
+    nF = 9.4309e-03
+    nF = 6.8679e-03
+    nF = 0.010054
+    nF = 9.2399e-03
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Southwest_duck.json
+    Pat = _duck.json
+    nF = 0.075029
+    nF = 0.052559
+    nF = 0.080016
+    nF = 0.084079
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Texas_duck.json
+    Pat = _duck.json
+    nF = 0.021443
+    nF = 0.015523
+    nF = 0.023991
+    nF = 0.023311
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Third_Shift_AEV.csv
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\char2_CEN.png
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\char2_MA.png
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2.svg
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_CA.png
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_NE.png
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_NE.svg
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_NW.png
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_SE.png
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_SW.png
+    Pat = _duck.json
+    name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_TX.png
+    Pat = _duck.json
+
+MATPOWER Version 8.0, 17-May-2024
+Power Flow -- AC-polar-power formulation
+
+Newton's method converged in 4 iterations.
+PF successful
+
+Converged in 0.32 seconds
+================================================================================
+|     System Summary                                                           |
+================================================================================
+
+How many?                How much?              P (MW)            Q (MVAr)
+---------------------    -------------------  -------------  -----------------
+Buses              5     Total Gen Capacity       1.0          -1.0 to 1.0
+Generators         1     On-line Capacity         1.0          -1.0 to 1.0
+Committed Gens     1     Generation (actual)      1.2               0.5
+Loads              4     Load                     1.2               0.2
+  Fixed            4       Fixed                  1.2               0.2
+  Dispatchable     0       Dispatchable          -0.0 of -0.0      -0.0
+Shunts             0     Shunt (inj)             -0.0               0.0
+Branches           4     Losses (I^2 * Z)         0.03              0.26
+Transformers       0     Branch Charging (inj)     -                0.0
+Inter-ties         0     Total Inter-tie Flow     0.0               0.0
+Areas              1
+
+                          Minimum                      Maximum
+                 -------------------------  --------------------------------
+Voltage Magnitude   0.886 p.u. @ bus 5          1.000 p.u. @ bus 1   
+Voltage Angle     -16.37 deg   @ bus 5          0.00 deg   @ bus 1   
+P Losses (I^2*R)             -                  0.02 MW    @ line 1-2
+Q Losses (I^2*X)             -                  0.15 MVAr  @ line 1-2
+
+================================================================================
+|     Bus Data                                                                 |
+================================================================================
+ Bus      Voltage          Generation             Load        
+  #   Mag(pu) Ang(deg)   P (MW)   Q (MVAr)   P (MW)   Q (MVAr)
+----- ------- --------  --------  --------  --------  --------
+    1  1.000    0.000*     1.23      0.47       -         -   
+    2  0.953   -6.020       -         -        0.40      0.06 
+    3  0.919  -11.147       -         -        0.40      0.04 
+    4  0.895  -14.381       -         -        0.20      0.08 
+    5  0.886  -16.369       -         -        0.20      0.03 
+                        --------  --------  --------  --------
+               Total:      1.23      0.47      1.20      0.21
+
+================================================================================
+|     Branch Data                                                              |
+================================================================================
+Brnch   From   To    From Bus Injection   To Bus Injection     Loss (I^2 * Z)  
+  #     Bus    Bus    P (MW)   Q (MVAr)   P (MW)   Q (MVAr)   P (MW)   Q (MVAr)
+-----  -----  -----  --------  --------  --------  --------  --------  --------
+   1      1      2      1.23      0.47     -1.21     -0.32     0.017      0.15
+   2      2      3      0.81      0.26     -0.80     -0.18     0.010      0.08
+   3      3      4      0.40      0.14     -0.40     -0.12     0.003      0.03
+   4      4      5      0.20      0.04     -0.20     -0.03     0.001      0.01
+                                                             --------  --------
+                                                    Total:     0.031      0.26
+    ct = 5
+    Ld =
+
+      LoadCF object with properties:
+
+             LBus: [1x1 Bus]
+           LCName: July
+          LoadCrv: [1x1 LoadCurve]
+               Pd: [1x1 double]
+               Qd: [1x1 double]
+             name: duck
+
+Setup EVs    i = 1
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+Added 25
+    Ld =
+
+      LoadCF object with properties:
+
+             LBus: [1x1 Bus]
+           LCName: January
+          LoadCrv: [1x1 LoadCurve]
+               Pd: [1x1 double]
+               Qd: [1x1 double]
+             name: duck
+
+Setup EVs    i = 1
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+Added 6
+    Ld =
+
+      LoadCF object with properties:
+
+             LBus: [1x1 Bus]
+           LCName: April
+          LoadCrv: [1x1 LoadCurve]
+               Pd: [1x1 double]
+               Qd: [1x1 double]
+             name: duck
+
+Setup EVs    i = 1
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+Added 7
+    Ld =
+
+      LoadCF object with properties:
+
+             LBus: [1x1 Bus]
+           LCName: April
+          LoadCrv: [1x1 LoadCurve]
+               Pd: [1x1 double]
+               Qd: [1x1 double]
+             name: duck
+
+Setup EVs    i = 1
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+Added 16
+    Ld =
+
+      LoadCF object with properties:
+
+             LBus: [1x1 Bus]
+           LCName: April
+          LoadCrv: [1x1 LoadCurve]
+               Pd: [1x1 double]
+               Qd: [1x1 double]
+             name: duck
+
+Setup EVs    i = 1
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+    Batt =
+
+      Battery object with properties:
+
+          Capacity: [1x1 double]
+           ChargeP: [1x1 double]
+           DriveDC: [1x1 double]
+              SMax: [1x1 double]
+               SOC: [1x1 double]
+
+    ans = EV
+Added 17
+    ans = NaN
+    ans = duck
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = NaN
+    ans = duck
+    ans =
+
+       0.340564   0.051085
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = NaN
+    ans = duck
+    ans =
+
+       0.343609   0.034361
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = NaN
+    ans = duck
+    ans =
+
+       0.145609   0.058244
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = NaN
+    ans = duck
+    ans =
+
+       0.145964   0.021895
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+    ans = EV
+    ans =
+
+       0   0
+
+
+MATPOWER Version 8.0, 17-May-2024
+Power Flow -- AC-polar-power formulation
+
+Newton's method converged in 4 iterations.
+PF successful
+
+Converged in 0.07 seconds
+================================================================================
+|     System Summary                                                           |
+================================================================================
+
+How many?                How much?              P (MW)            Q (MVAr)
+---------------------    -------------------  -------------  -----------------
+Buses              5     Total Gen Capacity       1.0          -1.0 to 1.0
+Generators         1     On-line Capacity         1.0          -1.0 to 1.0
+Committed Gens     1     Generation (actual)      1.0               0.3
+Loads              4     Load                     1.0               0.2
+  Fixed            4       Fixed                  1.0               0.2
+  Dispatchable     0       Dispatchable          -0.0 of -0.0      -0.0
+Shunts             0     Shunt (inj)             -0.0               0.0
+Branches           4     Losses (I^2 * Z)         0.02              0.16
+Transformers       0     Branch Charging (inj)     -                0.0
+Inter-ties         0     Total Inter-tie Flow     0.0               0.0
+Areas              1
+
+                          Minimum                      Maximum
+                 -------------------------  --------------------------------
+Voltage Magnitude   0.919 p.u. @ bus 5          1.000 p.u. @ bus 1   
+Voltage Angle     -12.32 deg   @ bus 5          0.00 deg   @ bus 1   
+P Losses (I^2*R)             -                  0.01 MW    @ line 1-2
+Q Losses (I^2*X)             -                  0.09 MVAr  @ line 1-2
+
+================================================================================
+|     Bus Data                                                                 |
+================================================================================
+ Bus      Voltage          Generation             Load        
+  #   Mag(pu) Ang(deg)   P (MW)   Q (MVAr)   P (MW)   Q (MVAr)
+----- ------- --------  --------  --------  --------  --------
+    1  1.000    0.000*     0.99      0.32       -         -   
+    2  0.966   -4.828       -         -        0.34      0.05 
+    3  0.942   -8.745       -         -        0.34      0.03 
+    4  0.925  -10.966       -         -        0.15      0.06 
+    5  0.919  -12.318       -         -        0.15      0.02 
+                        --------  --------  --------  --------
+               Total:      0.99      0.32      0.98      0.17
+
+================================================================================
+|     Branch Data                                                              |
+================================================================================
+Brnch   From   To    From Bus Injection   To Bus Injection     Loss (I^2 * Z)  
+  #     Bus    Bus    P (MW)   Q (MVAr)   P (MW)   Q (MVAr)   P (MW)   Q (MVAr)
+-----  -----  -----  --------  --------  --------  --------  --------  --------
+   1      1      2      0.99      0.32     -0.98     -0.23     0.011      0.09
+   2      2      3      0.64      0.18     -0.64     -0.13     0.006      0.05
+   3      3      4      0.29      0.10     -0.29     -0.08     0.002      0.01
+   4      4      5      0.15      0.03     -0.15     -0.02     0.000      0.00
+                                                             --------  --------
+                                                    Total:     0.019      0.16
+error: subsref: unknown method or property: Success
+error: called from
+    Run at line 164 column 21
+    RunEvNoSys at line 99 column 13
+    Run at line 55 column 11
+>> clear all;R=Run(3,"test.cfg");
+    LogPath = D:\SimulationTools\Projects\VAR_V2G\VARV2G\\Log\

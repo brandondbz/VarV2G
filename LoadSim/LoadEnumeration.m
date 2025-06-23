@@ -11,18 +11,18 @@ classdef LoadEnumeration<handle
     chargeAC=0;
     chargeDC=1;
     p_chargeIfr=[0,0,1];
-    p_chargeMin=[2000, 12000, 20000];
-    p_chargeMax=[4000, 24000, 50000];
-    p_chargeChance=[0.5, 0.05, 0]
-    %will fill for stats purposes
-    p_chargeCt=[0,0,1]
-    p_chargeBusses3=[]; %fill with candidate busses for the charge center.
+    p_chargeMin=[0.05] ;%, 12000, 20000];
+    p_chargeMax=[0.05] ;%, 24000, 50000];
+    p_chargeChance=[1, 0.05, 0]
+    p_SMaxRel=1;
     %chances of have a second given you have afirst
     %flips the coin until fail
     p_chargeChain=[0.6,0.25,0];
     %battery
     p_EV_Batt_Sigma=10000;
     p_EV_Batt_mean=100000;
+    p_EV_MaxEvs=30;
+    p_EV_MinEvs=10;
     %driving  %kwh/mi * mi/h = kwh/h (e.g. kw)
     %https://ecocostsavings.com/average-electric-car-kwh-per-mile/#:~:text=The%20average%20electric%20car%20kWh%20per%20100%20miles,100%20miles%20and%200.346kWh%20to%20travel%201%20mile.
     %states EV use 0.345 kwh/mi
@@ -34,7 +34,7 @@ classdef LoadEnumeration<handle
     p_EV_DRate_sigma=0.346*5
     %scale the unit randn to specified mean,var
     NRand=@(o,s,n,m)s*randn(n,m)+o;
-
+    chargeCt=0; %keep track as we want.
     p_Seed=now;
   endproperties
   methods(Static)
@@ -60,22 +60,17 @@ classdef LoadEnumeration<handle
     endfunction
     function SetupEV(obj,bs)
           Trig=rand();
-        if Trig>obj.p_chargeChance(2)
-          i=1
-          do
-            AEV = obj.Schedules(randi(length(obj.Schedules))).AEV;
-            BCap=obj.p_EV_Batt_mean+randn()*obj.p_EV_Batt_Sigma;
-            CRate=obj.RandRange(obj.p_chargeMin,obj.p_chargeMax);
-            Batt=Battery(BCap,Bcap,CRate, obj.p_EV_DRate_mean+randn()*obj.p_EV_DRate_sigma )
-            E=EV(Batt, obj.p_chargeIfr(2), AEV);
-            bs.addLoad(E);
-            i+=1;
-          until rand()>p_chargeChain(2)^i %enable multiple if there is one
-        elseif Trig>obj.p_chargeChance(1)
-          i=1
-          do
-            i+=1
-          until rand()>p_chargeChain(1)^i
+        if Trig<obj.p_chargeChance(1)
+          i=randi(obj.p_EV_MaxEvs-obj.p_EV_MinEvs)+obj.p_EV_MinEvs;
+            CRate=obj.RandRange(obj.p_chargeMin(1),obj.p_chargeMax(1)); % best to keep PU all the time now
+            E=EV(CRate, obj.p_SMaxRel*(bs.bus_Pd^2+bs.bus_Qd^2)^0.5, obj.Schedules,i,bs);
+            E.name
+            bs.AddLoad(E)
+
+          printf("Added %d\n", i);
+          %kbhit();
+        else
+          printf("No Trigger%d>%d", Trig, obj.p_chargeChance);
         endif
     endfunction
 
@@ -84,8 +79,7 @@ classdef LoadEnumeration<handle
       if exist('mode','var')==0
         mode=2;
       endif
-      obj.p_chargeCt(1)=0;
-      obj.p_chargeCt(2)=0;
+      obj.chargeCt=0;
       Seeding.Seed(obj.p_Seed);
       LoadSet=struct();
       %get the busses first
@@ -96,8 +90,11 @@ classdef LoadEnumeration<handle
 
       for i=1:length(bs)
         obj.SetupDuck(bs{i});
-        if mode>=2
+        if mode>=1
+          printf("Setup EVs");
             obj.SetupEV(bs{i});
+         else
+            printf("Skip EVs");
         endif
       endfor
       %TODO: 1) add a LoadCF for the load at each bus, using base P,Q

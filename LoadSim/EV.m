@@ -1,58 +1,87 @@
 classdef EV < Load
-  properties(Static)
-    TypeDC=1;
-    TypeAC=0;
-  endproperties
-  properties
-    Batt;
-    CType;
-    AEV=[];
-    Controller=[];
-    name="EV";
-  endproperties
-  methods
-    function obj=EV(Batt, CType, AEV)
-      obj.Batt=Batt;
-      obj.CType=CType;
-      obj.AEV=AEV;
-    endfunction
-    function Q=MaxQ(obj,i)
-      Q=sqrt(Batt.SMax^2-obj.Pd^2);
-    endfunction
-    function UpdateQ(obj,i)
-      %so we can chain in the branch cases
-      if isobject(obj.Controller)
-        %control the Q in this case.
-        obj.Qd=obj.Controller.Update(i);
+
+properties
+  SMax;
+  QMax=[];
+  PCharge=[];
+  name="EV";
+endproperties
+methods
+  function obj=EV(PCharge, SMax, AEVs, N, BS)
+    deltaT=Config.Inst().pget("deltaT");
+    QMax=[];
+    PCharges=[];
+    obj.SMax=SMax;
+    for i=1:N
+      %Get AEV
+      AEid=randi(length(AEVs))
+      AEV=AEVs{AEid}.AEV(:)'
+
+    %find when EV plugs back ing
+      Pulse=([0 diff(AEV)]>1);
+      cfg=Config.Inst().pget("LoadEnum")
+      if(isfield(cfg, 'p_EV_Batt_mean'))
+        BCap=cfg.p_EV_Batt_mean;
       else
-        obj.Qd=0;
+        BCap=100000;
       endif
+      BCap/=BS.BaseVA;
+      CTime=floor(BCap/(PCharge/N)/deltaT);
+      %power chargeing
+      PCharges(i,:)=conv(Pulse,(PCharge/N)*(ones(1,CTime)))(1:length(AEV));
+
+      QMaxR=sqrt(((SMax/N).^2)-(PCharges(i,:).^2));
+      %finally, blanck time EV not available
+      QMaxR(AEV==0)=0;
+      QMax(i,:)=QMaxR;
+      % [SMax/N N AEid]
+
+    endfor
+    %N=N
+   QSum= sum(QMax,1);
+
+    obj.PCharge=sum(PCharges,1);
+    obj.QMax=sum(QMax,1);
+    obj.SMax=SMax;
+
+  endfunction
+  function Q=MinQ(obj,i)
+      Q=-obj.QMax(i);
+  endfunction
+  function Q=MaxQ(obj,i)
+    Q=obj.QMax(i)
+  endfunction
+
+  function UpdateF(obj,i)
+    %created so that anytime 'update' is called on object, it will call 'UpdateF' if available
+    %to alow for mix of static and reactive loads
+    %since we pre-calced, nothhing here.
+    %endif
+
+     obj.Qd=min(max(obj.Qd,obj.MinQ(i)),obj.QMax(i));
+     obj.Pd=obj.PCharge(i);
     endfunction
-    function UpdateF(obj,i)
-      %created so that anytime 'update' is called on object, it will call 'UpdateF' if available
-      %to alow for mix of static and reactive loads
-      if i > length(AEV)
-        obj.Pd=0;
-        obj.Qd=0;
-        return;
-      endif
-      if AEV(i)==0
-        obj.Pd=0;
-        %if the cars away, it was driven.
-        %a future work could be to simulate the cars activity better.
-        obj.Batt.Discharge();
-        if obj.CType==EV.TypeAC
-          obj.Qd=0;
-          return;
-        elseif obj.CType==EV.TypeDC
-          obj.UpdateQ(i);
-          return;
-        endif
-      else
-        obj.Pd=Batt.Charge();
-      endif
-    endfunction
-  endmethods
+
+  function curve=Emit(obj,ii,dt)
+    DT=Config.Inst().pget("deltaT");
+    Config.Inst().pset("deltaT",dt);
+    try
+      o=zeros(size(ii));
+      %extract charging curve
+    for i=(ii(:)')
+      obj.UpdateF(i);
+      o=obj.Pd;
+    endfor
+
+  catch err
+    % Error handling
+    fprintf('Caught an error: %s\n', err.message);
+  end_try_catch
+  %restore
+  Config.Inst().pset("deltaT",DT);
+ endfunction
+
+endmethods
 
 endclassdef
 

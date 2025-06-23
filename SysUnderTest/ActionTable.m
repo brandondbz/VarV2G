@@ -1,80 +1,71 @@
-%using a LUT for the actions (with the actions choosen linearly spaced, similar to a histogram
-classdef ActionTable < handle
-    properties
-        actionPrototypes  % Stores action vectors
-        MIN
-        MAX
-    endproperties
+classdef ActionTable
+  properties
+    actions     % Matrix: each row is an N-d action
+    k           % Actual number of actions (≥ requested)
+    nDims       % Number of dimensions
+  endproperties
 
-    methods
-        function obj = ActionTable(K, minVector, maxVector)
-          if length(minVector)~=length(maxVector)
-            error("min and max vectors must be same size!");
-          endif
-            % Generate K equally spaced initial action vectors
-            obj.actionPrototypes = obj.initializeActionVectors(K, minVector, maxVector);
-            obj.MIN=minVector;
-            obj.MAX=maxVector;
-        endfunction
+  methods
+    function obj = ActionTable(k_requested, MIN, MAX)
+      MIN = MIN(:)'; MAX = MAX(:)';
+      obj.nDims = length(MIN);
+      if any(MIN == MAX)
+      printf('Notice: Invalid input range in one or more dimensions: MIN = [%s], MAX = [%s]', num2str(MIN), num2str(MAX));
+      endif
+      divisions = ceil(k_requested ^ (1 / obj.nDims));
+      obj.k = divisions ^ obj.nDims;
+      printf("ActionTable Division: %d, k: %d\n", divisions, obj.k);
 
-        function actionVectors = initializeActionVectors(obj, K, minVector, maxVector)
-            % Compute equally spaced points along each dimension
-            numDims = length(minVector);
-            actionVectors = zeros(K, numDims);
-            for d = 1:numDims
-                actionVectors(:, d) = linspace(minVector(d), maxVector(d), K)';
-            endfor
-            actionVectors(K+1,:)=zeros(1, numDims);
-        endfunction
-       function A=ValidActions(minQ,maxQ)
-         A=zeros(1,size(obj.actionPrototypes,1));
-         for i=1:length(A)
-           if sum(minQ>obj.actionPrototypes(i))>0 || sum(maxQ<obj.actionPrototypes)>0
-             A(i)=0; %if any outside of range then don't pick it.
-           else
-             A(i)=1; %otherwise ok
-           endif
-         endfor
-       endfunction
-       function expandActionSpace(obj,  minVector_new, maxVector_new)
-            minVector_new=min(minVector_new, obj.MIN);
-            maxVector_new=max(maxVector_new, obj.MAX);
-            if isequal(minVector_new, obj.MIN) && isequal(maxVector_new,obj.MAX)
-              return;
-            endif
-            S_new=(obj.MIN-minVector_new)^2
-            K_new;
-            %two steps. one, subtract the old min/max reletive (so NewMax-Max and NewMin-Min)
-            %then linspace in that space only
-            %finally Re-append (+ve to be max+rel) and (-ve to be Min-rel)
-            %the order is the same since new min is always <= old, and new max >= max
-            %so new min-old min is <=0 and new max-old max >=0
-            minVector_rel=minVector_new-obj.MIN;
-            maxVector_rel=obj.maxVector_new-obj.MAX;
+      F=0;
 
-            % Generate additional equally spaced action vectors
-            newActions = obj.initializeActionVectors(K_new, minVector_rel, maxVector_rel);
+      grid = cell(1, obj.nDims);
+      for d = 1:obj.nDims
+        if MIN(d)~=MAX(d)
+          grid{d} = linspace(MIN(d), MAX(d), divisions);
+        else%default to zeros (since min(d)==max(d) when the local Q is 0 (e.g. no EV at bus).
+        grid{d}=zeros(1,divisions);
+        endif
 
-            %now shift back to true
-            for i=1:size(newActions,1)
-              %can likely optimize to vector operations
-              for j=1:size(newActions,2)
-                if newActions(i,j)>0
-                  newActions(i,j)+=obj.MAX(j);
-                elseif newActions(i,j)<0
-                  newActions(i,j)+=obj.Min(j);
-                endif
-              endfor
-            endfor
+        if any(isinf(grid{d}))
+          F=1;
+          MIN
+          MAX
+          grid
+          error("Bad Grid");
+        endif
+      endfor
 
-            % Append new actions to existing prototypes
-            obj.actionPrototypes = [obj.actionPrototypes; newActions];
-        endfunction
+      [meshgrid_out{1:obj.nDims}] = ndgrid(grid{:});
+      obj.actions = zeros(obj.k, obj.nDims);
+      for d = 1:obj.nDims
+        obj.actions(:, d) = meshgrid_out{d}(:);
+      endfor
+      if any(isinf(obj.actions) || F)
+        s="";
+        grid
+        meshgrid_out
+        error("Problem in constructor %s",s);
+      endif
+      printf("Object Actions\n");
+      Record.Inst().pset("actionTable",obj.actions);
+    endfunction
 
-        function actionVector = getAction(obj, actionIndex)
-          actionVector=obj.actionPrototypes(actionIndex,:);
-        endfunction
+    function flags = ValidActions(obj, MIN, MAX)
+      MIN = MIN(:)'; MAX = MAX(:)';
+      within_min = bsxfun(@ge, obj.actions, MIN);
+      within_max = bsxfun(@le, obj.actions, MAX);
+      flags = all(within_min & within_max, 2);
+    endfunction
 
-    endmethods
+    function a = GetElement(obj, idx)
+      a = obj.actions(idx, :);
+    endfunction
+
+    function idx = FindClosest(obj, vec)
+      diffs = obj.actions - vec(:)';
+      dists = sum(diffs .^ 2, 2);
+      [~, idx] = min(dists);
+    endfunction
+  endmethods
 endclassdef
 

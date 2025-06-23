@@ -10,6 +10,9 @@ classdef Battery < handle
     function obj=Battery(Cap, SOC,ChargeP, DriveDC)
       obj.Capacity=Cap;
       obj.SOC=SOC;
+      if length(ChargeP)>1
+        error(sprintf("Invalid range: %s\n",sprintf("%d, ",ChargeP)));
+      endif
       obj.ChargeP=ChargeP;
       obj.DriveDC=DriveDC;
       obj.SMax=Config.Inst().pget('BattSMaxRel', 1.1)*ChargeP;
