@@ -93,7 +93,7 @@ classdef Bus < handle
       alpha=Config.Inst().pget("JAlpha",1)
       beta=Config.Inst().pget("JBeta",1);
       %by returning inverse we can switch between sum before or after invert.
-      JI=alpha*obj.GetSI()+beta*abs(obj.GetVe)
+      JI=beta*abs(obj.GetVe)
     endfunction
     function Update(obj,i)
       %update Thevenin first

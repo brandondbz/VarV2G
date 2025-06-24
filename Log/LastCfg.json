@@ -1,7 +1,7 @@
 {
-  "deltaT": 0.25,
+  "deltaT": 0.1,
   "PowSrc": "D:\\SimulationTools\\Projects\\VAR_V2G\\VARV2G\\BaseSim\\V2G_AI_Radial.m",
-  "runs": 10,
+  "runs": 2,
   "minP": [
     0,
     0.05,
@@ -68,7 +68,8 @@
   },
   "ThevCT": 10,
   "ThevTheshold": 0.001,
-  "JAlpha": 0.1,
+  "JAlpha": 0,
   "JBeta": 1,
-  "VNom": 1
+  "VNom": 1,
+  "dQ": 0.02
 }

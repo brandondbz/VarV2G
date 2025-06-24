@@ -49,7 +49,7 @@ methods
       Q=-obj.QMax(i);
   endfunction
   function Q=MaxQ(obj,i)
-    Q=obj.QMax(i)
+    Q=0; %obj.QMax(i);
   endfunction
 
   function UpdateF(obj,i)

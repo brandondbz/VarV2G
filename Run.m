@@ -4,11 +4,32 @@ classdef Run < handle
     Loads;
     EVSys
     EVNoSys
+    cfg_fname
   endproperties
   methods
-
-
-    function obj=Run(type,cfg_fname)
+    function obj=Run(cfg_fname)
+      obj.cfg_fname=cfg_fname
+    endfunction
+    function Save(obj)
+      if isobject(obj.EVSys)
+        obj.EVSys.Save("TEMP\\EVSys.json");
+      endif
+      if isobject(obj.EVNoSys)
+        obj.EVNoSys.Save("TEMP\\EVNoSys.json");
+      endif
+    endfunction
+    function Load(obj)
+      if exist("TEMP\\EVSys.json","file")
+        obj.EVSys=Record();
+        obj.EVSys.Load("TEMP\\EVSys.json");
+      endif
+      if exist("TEMP\\EVNoSys.json","file")
+        obj.EVNoSys=Record();
+        obj.EVNoSys.Load("TEMP\\EVNoSys.json")
+      endif
+    endfunction
+    function RunIt(obj, type)
+      cfg_fname=obj.cfg_fname;
       ld=0;
       _Init;
       if exist(cfg_fname,"file")
@@ -54,6 +75,13 @@ classdef Run < handle
         case 3
           obj.RunEvNoSys();
           obj.RunEvSys();
+
+
+      endswitch
+      diary off;
+    endfunction
+    function PlotIt(obj)
+      cfg=Config.Inst();
       imax=round(24/cfg.pget("deltaT",0.1));
       figure(1);
       VNS=obj.EVNoSys.pget('V');
@@ -64,27 +92,27 @@ classdef Run < handle
 
       E=length(VNS);
 
-       plot((S:E)/cfg.pget("deltaT"),VNS(S:E))
+       plot((S:E)/cfg.pget("deltaT"),VNS(S:E,:))
        xlabel time(hr);
        ylabel V(p.u.)
        title(" Voltage (No Compensation)")
       figure(2);
       VS=obj.EVSys.pget("V");
-      plot((S:E)/cfg.pget("deltaT"), VS(S:E))
+      plot((S:E)/cfg.pget("deltaT"), VS(S:E,:))
       xlabel time(hr);
        ylabel V(p.u.)
        title(" Voltage (With Compensation)")
       figure(3);
-            Vd= obj.EVSys.CFG.V- obj.EVNoSys.CFG.V;
-            plot((S:E)/cfg.pget("deltaT"),Vd(S:E))
+            %just substract
+            %Vd= (obj.EVSys.CFG.V- obj.EVNoSys.CFG.V;
+            %as a percentage tells the story better.
+            Vd= (obj.EVSys.CFG.V- obj.EVNoSys.CFG.V)./(1-obj.EVNoSys.CFG.V);
+            plot((S:E)/cfg.pget("deltaT"),Vd(S:E,:))
                    xlabel time(hr);
        ylabel V(p.u.)
-       title(" Delta Voltage (with control - without control)")
+       title(" Delta Voltage % (with control - without control)")
 
-      endswitch
-      diary off;
     endfunction
-
 
 
     function RunBase(obj)

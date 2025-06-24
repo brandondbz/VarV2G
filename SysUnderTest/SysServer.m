@@ -29,21 +29,14 @@ methods
     %}
     minV=Config.Inst().pget("minV", PS.CalBusses(@(b)(b.bus_Vmin)));
     maxV=Config.Inst().pget("maxV", PS.CalBusses(@(b)(b.bus_Vmax)));
-    minP=Config.Inst().pget("minP", PS.CalBusses(@(b)(b.bus_Pd*0.5)));
-    maxP=Config.Inst().pget("maxP", PS.CalBusses(@(b)(b.bus_Pd*1.5)));
-
+    dQ=Config.Inst().pget("dQ",0.02);
     EVB=PS.GetBussesEVs();
     obj.EVB=EVB;
-    mmQ=PS.GetQLim(1);
-    minQ=mmQ(1,:);
-    maxQ=mmQ(2,:);
 
     minV=minV(:)';
     maxV=maxV(:)';
-    minP=minP(:)';
-    maxP=maxP(:)';
     obj.PSys=PS;
-    obj.QL=QLearning( minV, minP, maxV, maxP, minQ,  maxQ);
+    obj.QL=QLearning( minV,maxV, dQ);
   endfunction
 
   function PreUpdate(obj,i)
@@ -53,55 +46,47 @@ methods
     PSys=obj.PSys;
         JI=PSys.GetJI
     if ~isempty(JI)
-      obj.JLast=1/(sum(JI));
+      obj.JLast=(mean(JI));
     else
       printf("EmptyJI")
       obj.JLast=nan;
       endif
-    mmQ=PSys.GetQLim(i);
-    minQ=mmQ(1,:);
-    maxQ=mmQ(2,:);
+
     %2) pack current state
     V=PSys.GetV();
-    P=PSys.GetP();
-    Q=PSys.GetQ();
+
     %3)call our QLearning methods
-    [state,act,QA]=obj.QL.Act( V, P,Q, minQ, maxQ)
+    [state,act]=obj.QL.Act( V)
     obj.state=state;
     obj.Act=act;
+    Action=obj.QL.actions(:, act);
     %4)apply the action to the EVs.
     %for simplicityies sake, use greedy leveraging
     EVs=PSys.GetLoads("EV");
-    QAA=zeros(1,length(EVs));
-    for bus=1:length(EVs)
-      LEVs=EVs{bus};
-      %since 3 state and below will always b 0 or +/-QMax
-       if obj.QL.actionTable.k<=3
-        Q=PSys.GetQ()(:)'+0.1*(QA(bus));
-       else
-        Q=QA(bus);
-      endif
-      QAA(bus)=Q;
-      for j=1:length(LEVs)
-          LE=LEVs{j};
-          if Q<0
-            LE.Qd=max(LE.MinQ(i),Q);
-          elseif Q>0
-            LS.Qd=min(LE.MaxQ(i),Q);
-          else
-            LS.Qd=0;
-           endif
-            Q-=LE.Qd;
-      endfor
-    endfor
+    if Action(1)==0
+          Record.Inst().RowAdd('QA',Action(:)');
+      return;
+    endif
+    LEV=EVs{Action(1)}{1}
+    LEV.Qd+=Action(2);
+    if(LEV.Qd>LEV.MaxQ(i))
+      LEV.Qd=LEV.MaxQ(i);
+    endif
+  if LEV.Qd<LEV.MinQ(i)
+    LEV.Qd=LEV.MinQ(i);
+  endif
 
-    Record.Inst().RowAdd('QA',QAA);
+    Record.Inst().RowAdd('QA',Action(:)');
   endfunction
   function PostUpdate(obj,i)
       PSys=obj.PSys;
+      %TODO: Update the J to be just the voltage
+      %seems that there is a feedback issue currently as it went wrong way.
+      %also set QMax (+ve) at 0
+      %also set the QMax constant.
     JI=PSys.GetJI
     if ~isempty(JI)
-      obj.JNext=1/(sum(JI));
+      obj.JNext=(mean(JI));
     else
       printf("EmptyJI")
       obj.JNext=nan;
@@ -120,7 +105,7 @@ methods
           endif
 
     %now update QTable last.
-    obj.QL.updateQTable(obj.state, obj.Act,JR,V,P,Q);
+    obj.QL.updateQTable(obj.state, obj.Act,JR);
   endfunction
 endmethods
 

@@ -1,0 +1,35 @@
+Log initialized: D:\SimulationTools\Projects\VAR_V2G\VARV2G\\Log\Log_186.txt
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\BaseSim
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\SysUnderTest
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\Compat
+Initilized
+error: 'cfg_fname' undefined near line 14, column 16
+error: called from
+    RunIt at line 14 column 10
+>> clear all;R=Run("test.cfg");R.Runit(3);e=lasterror();
+obj =
+
+  Run object with properties:
+
+        EVNoSys: [0x0 double]
+          EVSys: [0x0 double]
+          Loads: [0x0 double]
+      cfg_fname: test.cfg
+
+error: subsref: unknown method or property: Runit
+>> R.RunIt(3)
+error: RunIt: function called with too many inputs
+error: called from
+    RunIt
+>> clear all;R=Run("test.cfg");R.RunIt(3);e=lasterror();
+obj =
+
+  Run object with properties:
+
+        EVNoSys: [0x0 double]
+          EVSys: [0x0 double]
+          Loads: [0x0 double]
+      cfg_fname: test.cfg
+
+LogPath = D:\SimulationTools\Projects\VAR_V2G\VARV2G\\Log\

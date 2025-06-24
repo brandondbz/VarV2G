@@ -1,0 +1,20 @@
+Log initialized: D:\SimulationTools\Projects\VAR_V2G\VARV2G\\Log\Log_187.txt
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\BaseSim
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\SysUnderTest
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\Compat
+Initilized
+error: 'cfg_fname' undefined near line 17, column 16
+error: called from
+    RunIt at line 17 column 10
+>> clear all;R=Run("test.cfg");R.RunIt(3);e=lasterror();
+obj =
+
+  Run object with properties:
+
+        EVNoSys: [0x0 double]
+          EVSys: [0x0 double]
+          Loads: [0x0 double]
+      cfg_fname: test.cfg
+
+LogPath = D:\SimulationTools\Projects\VAR_V2G\VARV2G\\Log\
