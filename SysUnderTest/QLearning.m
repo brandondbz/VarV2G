@@ -34,7 +34,10 @@ classdef QLearning<handle
 
         end
 
-        function [st,ac]=Act(obj, V) % rename as needed, but have the inputs come in here.
+        function [st,ac]=Act(obj, V)%,Q,Qmin,Qmax) % rename as needed, but have the inputs come in here.
+        %ai=~[(Q<Qmin)(2:end) (Q>Qmax)(2:end) 0];
+        %actions=obj.actions(ai);
+        %QTable=obj.QTable(ai,:);
 
           %require row vectors
           if size(V,1)>size(V,2)

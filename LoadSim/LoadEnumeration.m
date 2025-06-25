@@ -14,15 +14,15 @@ classdef LoadEnumeration<handle
     p_chargeMin=[0.05] ;%, 12000, 20000];
     p_chargeMax=[0.05] ;%, 24000, 50000];
     p_chargeChance=[1, 0.05, 0]
-    p_SMaxRel=1;
+    p_SMaxRel=2;
     %chances of have a second given you have afirst
     %flips the coin until fail
     p_chargeChain=[0.6,0.25,0];
     %battery
     p_EV_Batt_Sigma=10000;
     p_EV_Batt_mean=100000;
-    p_EV_MaxEvs=30;
-    p_EV_MinEvs=10;
+    p_EV_MaxEvs=3000;
+    p_EV_MinEvs=1000;
     %driving  %kwh/mi * mi/h = kwh/h (e.g. kw)
     %https://ecocostsavings.com/average-electric-car-kwh-per-mile/#:~:text=The%20average%20electric%20car%20kWh%20per%20100%20miles,100%20miles%20and%200.346kWh%20to%20travel%201%20mile.
     %states EV use 0.345 kwh/mi

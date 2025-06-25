@@ -53,8 +53,14 @@ methods
       endif
 
     %2) pack current state
+    VLim=Config.Inst().pget("VThresh",0.05);
     V=PSys.GetV();
+     if max(abs(1-V))<0.05
+        %Take no action
+        %adds a hysteresis effect and also protects EV chargers from unnessasary added wear.
 
+        return;
+     endif
     %3)call our QLearning methods
     [state,act]=obj.QL.Act( V)
     obj.state=state;

@@ -5,6 +5,10 @@ classdef Run < handle
     EVSys
     EVNoSys
     cfg_fname
+    EEvents={}
+    ConSys=0;
+    ConNoSys=0;
+    Sys=[];
   endproperties
   methods
     function obj=Run(cfg_fname)
@@ -80,6 +84,11 @@ classdef Run < handle
       endswitch
       diary off;
     endfunction
+
+    function PlotCmp(R)
+      figure;      b=3;      plot(R.EVNoSys.CFG.V(:,b));      hold on;      plot(R.EVSys.CFG.V(:,b));      plot(R.EVSys.CFG.P(:,b)*10);      plot([1 length(R.EVSys.CFG.P)],[0.95 0.95],":");
+    endfunction
+
     function PlotIt(obj)
       cfg=Config.Inst();
       imax=round(24/cfg.pget("deltaT",0.1));
@@ -142,16 +151,25 @@ classdef Run < handle
 
             rec.Save("Log\\LastBRec.json");
     endfunction
+
     function RunEvNoSys(obj)
       cfg=Config.Inst();
       %no EVs at all
       imax=round(24/cfg.pget("deltaT",0.1));
       %run n times.
+      if ~isobject(obj.ConNoSys)
         PS=PowSim();
         obj.Loads.SetupLoads(PS,2);
+        obj.CreateEvents(imax);
+       Event.AddEvents(PS,obj.EEvents);
+        obj.ConNoSys=PS;
+        else
+          PS=obj.ConNoSys;
+     endif
 
-rec=Record.Inst(1);
+          rec=Record.Inst(1);
       for j=1:cfg.pget("runs",1);
+          obj.UpdateEventsRun(j);
           for i=1:imax
             PS.Update(i);
             PS.Run();
@@ -170,16 +188,33 @@ rec=Record.Inst(1);
             obj.EVNoSys=rec;
             rec.Save("Log\\LastNSRec.json");
     endfunction
+
+
     function RunEvSys(obj)
       cfg=Config.Inst();
       %no EVs at all
       imax=round(24/(cfg.pget("deltaT",0.1)));
       %run n times.
-       PS=PowSim();
-       obj.Loads.SetupLoads(PS,2);
-        SS=SysServer(PS);
-rec=Record.Inst(1);
-      for j=1:cfg.pget("runs",1);
+        if ~isobject(obj.ConSys)
+          PS=PowSim();
+          obj.Loads.SetupLoads(PS,2);
+          obj.CreateEvents(imax);
+          Event.AddEvents(PS,obj.EEvents);
+          obj.ConSys=PS;
+        else
+          PS=obj.ConSys;
+        endif
+        if isempty(obj.Sys)
+            SS=SysServer(PS);
+            obj.Sys=SS;
+         else
+            SS=obj.Sys;
+          endif
+
+        rec=Record.Inst(1);
+
+        for j=1:cfg.pget("runs",1);
+         obj.UpdateEventsRun(j);
           for i=1:imax
             SS.PreUpdate(i);
             PS.Update(i);
@@ -200,6 +235,7 @@ rec=Record.Inst(1);
             rec.RowAdd("QMax",QL(2,:));
             rec.RowAdd("Run",j);
           endfor
+          beep
       endfor
 
       ToPrettyJson(PS,'Log\LastPS.json');
@@ -208,6 +244,26 @@ rec=Record.Inst(1);
       Record.Inst().Save('Log\LastRec.json');
       rec.Save("Log\\LastSRec.json");
       obj.EVSys=rec;
+    endfunction
+
+    function CreateEvents(obj, imax)
+      if(~isempty(obj.EEvents))
+        return;
+      endif
+      obj.EEvents={};
+      EVT1=Event(imax);
+      %EVT1.Rect(0.05+0.02j, 3*imax/6, 4*imax/6)
+      EVT1.Cust();
+      EVT1.bus=5;
+      EVT1.runT=[ 2];
+      obj.EEvents(end+1)=EVT1;
+      %can add more as desired.
+    endfunction
+
+    function UpdateEventsRun(obj,rn)
+      for i=1:length(obj.EEvents)
+        obj.EEvents{i}.run=rn;
+      endfor
     endfunction
   endmethods
 

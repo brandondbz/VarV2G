@@ -37,6 +37,7 @@ classdef PowSim < handle
         endif
       endfor
     endfunction
+
 function c=GetLoads(obj, name)
   c=cell(1,length(obj.Busses));
   for i=1:length(obj.Busses)
@@ -71,6 +72,7 @@ endfunction
         ar(i)=fun(obj.Busses{i});
       endfor
     endfunction
+
     function Zth=GetThevZLog(obj)
        Zth=zeros(1,length(obj.Busses));
         for i=1:length(Zth)
@@ -79,6 +81,7 @@ endfunction
           Zth(i)=obj.Busses{i}.thev.Zth;
         endfor
     endfunction
+
     function Vth=GetThevVLog(obj)
              Vth=zeros(1,length(obj.Busses));
         for i=1:length(Vth)
@@ -87,14 +90,13 @@ endfunction
           Vth(i)=obj.Busses{i}.thev.Vth;
         endfor
     endfunction
+
     function [bs,ct]=getBusses(obj)
       bs=obj.Busses;
       ct=length(obj.Busses)
     endfunction
-    %putting it together
-    function J=GetJ(obj)
-      error("NO J");
-    endfunction
+
+
     %needed for J
     function V=GetV(obj)
         %in implementation, the V will be averaged from multiple sensors at the bus
@@ -109,6 +111,7 @@ endfunction
           V(i)=obj.Busses{i}.bus_Vm;
         endfor
     endfunction
+
         function V=GetP(obj)
         %in implementation, the V will be averaged from multiple sensors at the bus
         %including meters, EVs, etc. One can look at our previous paper on
@@ -122,6 +125,7 @@ endfunction
           V(i)=obj.Busses{i}.bus_Pd;
         endfor
     endfunction
+
         function V=GetQ(obj)
         %in implementation, the V will be averaged from multiple sensors at the bus
         %including meters, EVs, etc. One can look at our previous paper on
@@ -147,9 +151,11 @@ endfunction
           endif
         endfor
     endfunction
+
     function b=GetBus(obj, i)
       b=obj.Busses{i};
     endfunction
+
     function Update(obj,i)
       %can add sys wide updates if needed.
       for a=obj.Busses
@@ -157,16 +163,15 @@ endfunction
         a.Update(i);
       endfor
     endfunction
+
     function Run(obj)
       %tip: if we want to implement (e.g. line variability) do that here as well
       %run
       obj.cse=runpf(obj.cse,obj.opt);
-      cse=obj.cse;
       if obj.cse.success==0
-        obj.cse
+        cse=obj.cse
         error("Convergence error");
       endif
-      obj.cse
     endfunction
 
   endmethods

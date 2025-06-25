@@ -12,10 +12,13 @@ methods
     QMax=[];
     PCharges=[];
     obj.SMax=SMax;
+    global AEVS_G={};
+
     for i=1:N
       %Get AEV
       AEid=randi(length(AEVs))
       AEV=AEVs{AEid}.AEV(:)'
+      AEVS_G{end+1}=AEV;
 
     %find when EV plugs back ing
       Pulse=([0 diff(AEV)]>1);

@@ -1,0 +1,5658 @@
+Log initialized: D:\SimulationTools\Projects\VAR_V2G\VARV2G\\Log\Log_229.txt
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\BaseSim
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\SysUnderTest
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim
+Directory already in path: D:\SimulationTools\Projects\VAR_V2G\VARV2G\Compat
+Initilized
+Loaded
+deltaT: 0.1000
+PowSrc: D:\SimulationTools\Projects\VAR_V2G\VARV2G\BaseSim\V2G_AI_Radial.m
+runs: 2
+pruns: 8
+minP:           0
+   0.050000
+   0.045000
+   0.060000
+   0.030000
+maxP:         0
+   0.1500
+   0.1350
+   0.1800
+   0.0900
+minV:    0.9500
+   0.9500
+   0.9500
+   0.9500
+   0.9500
+maxV:    1.0500
+   1.0500
+   1.0500
+   1.0500
+   1.0500
+QSettings: [struct]
+  [1]:
+    alpha: 3
+    gamma: 0.010000
+    epsilon: 0.1000
+    som_learningRate: 1
+    som_threshold: 0.1000
+    numStates: 100
+    numActions: 3000
+LoadEnum: [struct]
+  [1]:
+    p_EV_Batt_Sigma: 10000
+    p_EV_Batt_mean: 100000
+    p_EV_DRate_mean: 15.570
+    p_EV_DRate_sigma: 1.7300
+    p_EV_MaxEvs: 30
+    p_EV_MinEvs: 10
+    p_SMaxRel: 1
+    p_Seed: 7.3979e+05
+    p_chargeChain:    0.9500
+   0.2500
+        0
+    p_chargeChance:    1.0000
+   0.0500
+        0
+    p_chargeIfr:    0
+   0
+   1
+    p_chargeMax: 0.5000
+    p_chargeMin: 0.5000
+ThevCT: 10
+ThevTheshold: 1.0000e-03
+JAlpha: 0
+JBeta: 1
+VNom: 1
+BaseFile =
+
+@(f) f (1:([find(f == '.') - 1, length(f)] (1)))
+
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\.
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\..
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\California_duck.json
+Pat = _duck.json
+nF = 0.027457
+nF = 0.021201
+nF = 0.030624
+nF = 0.029292
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Central_duck.json
+Pat = _duck.json
+nF = 9.0468e-03
+nF = 9.6529e-03
+nF = 6.4554e-03
+nF = 8.0770e-03
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\First_Shift_AEV.csv
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Home_AEV_B.csv
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Mid_Atlantic_duck.json
+Pat = _duck.json
+nF = 0.011282
+nF = 7.9174e-03
+nF = 0.011758
+nF = 9.2293e-03
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\NorthWest_duck.json
+Pat = _duck.json
+nF = 0.026174
+nF = 0.025408
+nF = 0.021283
+nF = 0.020169
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Northeast_duck.json
+Pat = _duck.json
+nF = 0.030172
+nF = 0.022314
+nF = 0.031938
+nF = 0.025941
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Readme.txt
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Retired_AEV_B.csv
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Schedules.ProtoCsv
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Second_Shift_AEV.csv
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Southeast_duck.json
+Pat = _duck.json
+nF = 9.4309e-03
+nF = 6.8679e-03
+nF = 0.010054
+nF = 9.2399e-03
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Southwest_duck.json
+Pat = _duck.json
+nF = 0.075029
+nF = 0.052559
+nF = 0.080016
+nF = 0.084079
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Texas_duck.json
+Pat = _duck.json
+nF = 0.021443
+nF = 0.015523
+nF = 0.023991
+nF = 0.023311
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\Third_Shift_AEV.csv
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\char2_CEN.png
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\char2_MA.png
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2.svg
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_CA.png
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_NE.png
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_NE.svg
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_NW.png
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_SE.png
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_SW.png
+Pat = _duck.json
+name = D:\SimulationTools\Projects\VAR_V2G\VARV2G\LoadSim\Data\chart2_TX.png
+Pat = _duck.json
+
+MATPOWER Version 8.0, 17-May-2024
+Power Flow -- AC-polar-power formulation
+
+Newton's method converged in 4 iterations.
+PF successful
+
+Converged in 0.32 seconds
+================================================================================
+|     System Summary                                                           |
+================================================================================
+
+How many?                How much?              P (MW)            Q (MVAr)
+---------------------    -------------------  -------------  -----------------
+Buses              5     Total Gen Capacity       1.0          -1.0 to 1.0
+Generators         1     On-line Capacity         1.0          -1.0 to 1.0
+Committed Gens     1     Generation (actual)      1.0               0.4
+Loads              4     Load                     1.0               0.2
+  Fixed            4       Fixed                  1.0               0.2
+  Dispatchable     0       Dispatchable          -0.0 of -0.0      -0.0
+Shunts             0     Shunt (inj)             -0.0               0.0
+Branches           4     Losses (I^2 * Z)         0.02              0.15
+Transformers       0     Branch Charging (inj)     -                0.0
+Inter-ties         0     Total Inter-tie Flow     0.0               0.0
+Areas              1
+
+                          Minimum                      Maximum
+                 -------------------------  --------------------------------
+Voltage Magnitude   0.906 p.u. @ bus 5          1.000 p.u. @ bus 1   
+Voltage Angle     -12.26 deg   @ bus 5          0.00 deg   @ bus 1   
+P Losses (I^2*R)             -                  0.01 MW    @ line 1-2
+Q Losses (I^2*X)             -                  0.09 MVAr  @ line 1-2
+
+================================================================================
+|     Bus Data                                                                 |
+================================================================================
+ Bus      Voltage          Generation             Load        
+  #   Mag(pu) Ang(deg)   P (MW)   Q (MVAr)   P (MW)   Q (MVAr)
+----- ------- --------  --------  --------  --------  --------
+    1  1.000    0.000*     0.99      0.36       -         -   
+    2  0.963   -4.788       -         -        0.50      0.06 
+    3  0.937   -7.661       -         -        0.12      0.04 
+    4  0.915  -10.360       -         -        0.15      0.08 
+    5  0.906  -12.261       -         -        0.20      0.03 
+                        --------  --------  --------  --------
+               Total:      0.99      0.36      0.97      0.21
+
+================================================================================
+|     Branch Data                                                              |
+================================================================================
+Brnch   From   To    From Bus Injection   To Bus Injection     Loss (I^2 * Z)  
+  #     Bus    Bus    P (MW)   Q (MVAr)   P (MW)   Q (MVAr)   P (MW)   Q (MVAr)
+-----  -----  -----  --------  --------  --------  --------  --------  --------
+   1      1      2      0.99      0.36     -0.98     -0.27     0.011      0.09
+   2      2      3      0.48      0.21     -0.47     -0.18     0.003      0.03
+   3      3      4      0.35      0.14     -0.35     -0.12     0.002      0.02
+   4      4      5      0.20      0.04     -0.20     -0.03     0.001      0.01
+                                                             --------  --------
+                                                    Total:     0.018      0.15
+ct = 5
+Ld =
+
+  LoadCF object with properties:
+
+         LBus: [1x1 Bus]
+       LCName: July
+      LoadCrv: [1x1 LoadCurve]
+           Pd: [1x1 double]
+           Qd: [1x1 double]
+         name: duck
+
+Setup EVsAEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+ans = EV
+Added 15
+Ld =
+
+  LoadCF object with properties:
+
+         LBus: [1x1 Bus]
+       LCName: October
+      LoadCrv: [1x1 LoadCurve]
+           Pd: [1x1 double]
+           Qd: [1x1 double]
+         name: duck
+
+Setup EVsAEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+ans = EV
+Added 18
+Ld =
+
+  LoadCF object with properties:
+
+         LBus: [1x1 Bus]
+       LCName: April
+      LoadCrv: [1x1 LoadCurve]
+           Pd: [1x1 double]
+           Qd: [1x1 double]
+         name: duck
+
+Setup EVsAEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+ans = EV
+Added 19
+Ld =
+
+  LoadCF object with properties:
+
+         LBus: [1x1 Bus]
+       LCName: January
+      LoadCrv: [1x1 LoadCurve]
+           Pd: [1x1 double]
+           Qd: [1x1 double]
+         name: duck
+
+Setup EVsAEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+ans = EV
+Added 23
+Ld =
+
+  LoadCF object with properties:
+
+         LBus: [1x1 Bus]
+       LCName: January
+      LoadCrv: [1x1 LoadCurve]
+           Pd: [1x1 double]
+           Qd: [1x1 double]
+         name: duck
+
+Setup EVsAEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 2
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 187 through 240:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 3
+AEV =
+
+ Columns 1 through 62:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 63 through 124:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 125 through 186:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+AEid = 1
+AEV =
+
+ Columns 1 through 62:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+ Columns 63 through 124:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 125 through 186:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   1   1   1   1   1
+
+ Columns 187 through 240:
+
+   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1
+
+cfg =
+
+  scalar structure containing the fields:
+
+    p_EV_Batt_Sigma = 10000
+    p_EV_Batt_mean = 100000
+    p_EV_DRate_mean = 15.570
+    p_EV_DRate_sigma = 1.7300
+    p_EV_MaxEvs = 30
+    p_EV_MinEvs = 10
+    p_SMaxRel = 1
+    p_Seed = 7.3979e+05
+    p_chargeChain =
+
+       0.9500
+       0.2500
+            0
+
+    p_chargeChance =
+
+       1.0000
+       0.0500
+            0
+
+    p_chargeIfr =
+
+       0
+       0
+       1
+
+    p_chargeMax = 0.5000
+    p_chargeMin = 0.5000
+
+ans = EV
+Added 28
+error: 'de' undefined near line 58, column 10
+error: called from
+    Cust at line 58 column 9
+    CreateEvents at line 255 column 7
+    RunEvNoSys at line 163 column 9
+    RunIt at line 80 column 11
+>> clear all;R=Run("test.cfg");R.RunIt(3);e=lasterror();
+obj =
+
+  Run object with properties:
+
+       ConNoSys: [1x1 double]
+         ConSys: [1x1 double]
+        EEvents: [0x0 cell]
+        EVNoSys: [0x0 double]
+          EVSys: [0x0 double]
+          Loads: [0x0 double]
+            Sys: [0x0 double]
+      cfg_fname: test.cfg
+
+LogPath = D:\SimulationTools\Projects\VAR_V2G\VARV2G\\Log\

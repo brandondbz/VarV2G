@@ -14,13 +14,10 @@ classdef Bus < handle
 
   methods
     function AddLoad(obj,ld)
-      %I don't know which is the more 'correct' looking
-      %but both work, and I think leaving ld without being {ld} look better.
       %importantly, we add the load to Loads.
       %we use the 'Load' class both as a base class for EV connections and randomized loads
       %and as the main class for static loads
       obj.Loads{end+1}=ld;
-      %Loads=[Loads, ld];
       ld.LBus=obj;
     endfunction
 
@@ -48,7 +45,7 @@ classdef Bus < handle
         endif
       endfor
       if any(isinf(QL))
-        NL
+
         if(NL==0)
             QL=[0,0];
             return
@@ -69,7 +66,7 @@ classdef Bus < handle
       obj.PSi=PS;
       obj.QB=eref.bus_Qd(PS.cse,i);
       obj.PB=eref.bus_Pd(PS.cse,i);
-      %TODO: Have all params read from a global CFG class, so we can adjust easily
+    %TODO: RM
       obj.thev=Thev(Config.Inst().pget("ThevCT",3));
     endfunction
     function Ve=GetVe(obj)
@@ -77,6 +74,7 @@ classdef Bus < handle
       Vr=Config.Inst().pget("VNom",1);
       Ve=(Vr-V);
     endfunction
+
     function SI=GetSI(obj)
       %\begin{equation}SI_{th} = \frac{1}{\left| Z_{L} \right| - \left| Z_{th} \right|}\end{equation}
       Vth=obj.thev.Vth;
@@ -89,14 +87,16 @@ classdef Bus < handle
       endif
       SI=1/(abs(Zl)-abs(Zth));
     endfunction
+
     function JI=GetJI(obj)
       alpha=Config.Inst().pget("JAlpha",1)
       beta=Config.Inst().pget("JBeta",1);
       %by returning inverse we can switch between sum before or after invert.
       JI=beta*abs(obj.GetVe)
     endfunction
+
     function Update(obj,i)
-      %update Thevenin first
+      %TODO: RM Thevenin first
       %for that, we need the load current
       I=(obj.bus_Pd()/obj.bus_Vm)+j*(obj.bus_Qd()/obj.bus_Vm);
       %then approx.
